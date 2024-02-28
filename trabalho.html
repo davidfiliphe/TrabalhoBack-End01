@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz</h1>
+        <form action="result.php" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <p>1. Qual é a capital do Brasil?</p>
+            <input type="text" name="q1" required><br><br>
+
+            <p>2. Quem escreveu "Dom Quixote"?</p>
+            <input type="text" name="q2" required><br><br>
+
+            <p>3. Qual o maior planeta do sistema solar?</p>
+            <select name="q3" required>
+                <option value="">Selecione uma opção</option>
+                <option value="Mercurio">Mercúrio</option>
+                <option value="Venus">Vênus</option>
+                <option value="Terra">Terra</option>
+                <option value="Marte">Marte</option>
+                <option value="Jupiter">Júpiter</option>
+                <option value="Saturno">Saturno</option>
+                <option value="Urano">Urano</option>
+                <option value="Netuno">Netuno</option>
+            </select><br><br>
+
+            <p>4. Qual é o maior oceano do mundo?</p>
+            <select name="q4" required>
+                <option value="">Selecione uma opção</option>
+                <option value="Atlantico">Atlântico</option>
+                <option value="Indico">Índico</option>
+                <option value="Pacifico">Pacífico</option>
+                <option value="Artico">Ártico</option>
+            </select><br><br>
+
+            <p>5. Quem pintou a Mona Lisa?</p>
+            <select name="q5" required>
+                <option value="">Selecione uma opção</option>
+                <option value="Leonardo">Leonardo da Vinci</option>
+                <option value="Michelangelo">Michelangelo</option>
+                <option value="Rafael">Rafael</option>
+                <option value="Donatello">Donatello</option>
+            </select><br><br>
+
+            <p>6. Em que ano a Primeira Guerra Mundial começou?</p>
+            <input type="text" name="q6" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
